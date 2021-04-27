@@ -340,10 +340,7 @@ h3 {
     object-position: left;
 }
 
-.cake-card-item .card-price {
-    position: absolute;
-    top: 0;
-    left: 0;
+.price {
     background-color: var(--background-color-4);
     width: 7rem;
     height: 7rem;
@@ -353,6 +350,21 @@ h3 {
     font-size: 2rem;
     font-weight: 700;
     border-radius: 3px;
+}
+
+.cake-card-item .card-price {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: var(--background-color-4);
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 3px; */
 }
 
 .cake-card-item .card-text-content {
@@ -415,12 +427,16 @@ h3 {
     width: 100%;
 }
 
-.our-chefs-card-social {
-    background-color: rgba(0, 0, 0, 0.8);
+.social-icons-list {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.our-chefs-card .social-icons-list {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -431,32 +447,35 @@ h3 {
     transition: opacity .3s;
 }
 
-.our-chefs-card-social-icon {
-    margin-right: 1.2rem;
-}
-
-.our-chefs-card-social-icon:last-child {
-    margin-right: 0;
-}
-
-.our-chefs-card-social-icon a {
+.social-icon-list-item a {
     width: 4rem;
     height: 4rem;
-    background-color: var(--background-color-2);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--text-color-2);
     transition: background-color .3s;
 }
 
-.our-chefs-card-social-icon a:hover {
+.social-icon-list-item {
+    margin-right: 1.2rem;
+}
+
+.social-icon-list-item:last-child {
+    margin-right: 0;
+}
+
+.our-chefs-card .social-icon-list-item a {
+    background-color: var(--background-color-2);
+    color: var(--text-color-2);
+}
+
+.our-chefs-card .social-icon-list-item a:hover {
     background-color: var(--background-color-4);
 }
 
-.our-chefs-card:hover .our-chefs-card-social {
+.our-chefs-card:hover .social-icons-list {
     visibility: visible;
     opacity: 1;
 }
@@ -599,9 +618,119 @@ h3 {
     color: var(--text-color-3);
 }
 
+
+/******************** KLASSY WEEK ********************/
+
+.klassy-week {
+    background-color: var(--background-color-1);
+    padding: 12rem 0;
+}
+
+.klassy-week-content {
+    max-width: var(--width-container);    
+    margin: 0 auto;
+    /* border: 1px solid goldenrod; */
+}
+
+.btn-tab-selector {
+    background-color: inherit;
+    border: 1px solid var(--main-color);
+    border-radius: .5rem;
+    color: var(--text-color-1);
+    padding: 2rem;
+    flex: 0 0 10rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.btn-tab-selector:last-child {
+    margin-right: 0;
+}
+
+.tab-selectors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.meals-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.meal-item {
+    flex: 0 1 calc(50% - 4rem);
+    display: flex;
+    margin: 2rem;
+}
+
+.meal-img img {
+    display: block;
+    border-radius: .5rem;
+}
+
+.meal-details {
+    padding: 1.5rem;
+}
+
+.meal-details h4 {
+    font-size: 2rem;
+    margin-bottom: .6rem;
+}
+
+.meal-details p {
+    font-size: 1.4rem;
+}
+
+.meal-price {
+    color: var(--text-color-3);
+    flex: 0 0 auto;
+}
+
+/******************** FOOTER ********************/
+
+.footer {
+    background-color: var(--background-color-4);
+}
+
+.footer-content {
+    max-width: var(--width-container);    
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content .social-icon-list-item {
+    margin-right: 1.5rem;
+}
+
+.footer-content .social-icon-list-item:last-child {
+    margin-right: 0;
+}
+
+.footer-content .social-icon-list-item a {
+    background-color: var(--background-color-1);
+    color: var(--main-color);
+    transition: color .3s;
+}
+
+.footer-content .social-icon-list-item a:hover {
+    color: var(--text-color-2);
+}
+
+.footer-logo img {
+    display: block;
+}
+
+.footer-copy {
+    color: var(--text-color-3);
+    font-size: 1.5rem;
+}
+
 .dummy-div {
     height: 200px;
-    background-color: orangered;
+    background-color: skyblue;
 }
 
 
