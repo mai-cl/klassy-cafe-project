@@ -53,3 +53,7 @@ elements.menuPrevBtn.addEventListener("click", (e) =>
 elements.menuNextBtn.addEventListener("click", (e) =>
   infinitySlider.onClickNextBtn(menuSlider)
 );
+
+elements.navToggleBtn.addEventListener("click", () => {
+  elements.navMenu.classList.toggle("show");
+});

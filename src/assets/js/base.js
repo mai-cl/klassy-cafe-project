@@ -11,4 +11,7 @@ export const elements = {
   mainSliderItems: Array.from(document.querySelectorAll(".main-slider-item")),
   mainSliderPrevBtn: document.getElementById("main-slider-prev-btn"),
   mainSliderNextBtn: document.getElementById("main-slider-next-btn"),
+
+  navToggleBtn: document.getElementById("nav-toggle-btn"),
+  navMenu: document.getElementById("nav-menu"),
 };
