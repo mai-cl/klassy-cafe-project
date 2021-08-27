@@ -12,7 +12,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "[name].bundle.[hash].js",
+    filename: "[name].bundle.[fullhash].js",
     assetModuleFilename: "assets/images/[hash][ext][query]",
   },
   plugins: [
