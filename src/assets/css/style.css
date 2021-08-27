@@ -22,6 +22,7 @@
   --gray-color-1: #f4f4f4;
 
   --width-container: 110rem;
+  --width-container-medium: 80rem;
 }
 
 html {
@@ -59,6 +60,32 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+h2 {
+  color: var(--text-color-1);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+h2::before {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 30px;
+  background-color: currentColor;
+  margin-right: 1rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  padding: 2rem 0;
 }
 
 /******************** HEADER ********************/
@@ -313,42 +340,13 @@ img {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  gap: 5rem;
+  padding: 0 2rem;
 }
 
-.about-us-left {
-  margin-right: 3rem;
-  flex: 1;
-}
-
+.about-us-left,
 .about-us-right {
-  margin-left: 3rem;
   flex: 1;
-}
-
-h2 {
-  color: var(--text-color-1);
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 1.6rem;
-  font-weight: 500;
-  letter-spacing: 2px;
-  display: flex;
-  align-items: center;
-}
-
-h2::before {
-  content: "";
-  display: inline-block;
-  height: 1px;
-  width: 30px;
-  background-color: currentColor;
-  margin-right: 1rem;
-}
-
-h3 {
-  font-size: 3rem;
-  font-weight: 900;
-  padding: 2rem 0;
 }
 
 .about-us-content p {
@@ -361,18 +359,32 @@ h3 {
 .about-us-pictures {
   display: flex;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .about-us-pictures img {
-  display: block;
-  width: 16rem;
-  height: auto;
+  flex: 1;
+  min-width: 0;
 }
 
 .about-us-right .bg-video {
-  display: block;
-  width: 51rem;
   height: auto;
+}
+
+@media only screen and (max-width: 1050px) {
+  .about-us-content {
+    max-width: var(--width-container-medium);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us-content {
+    gap: 4rem;
+  }
+  .about-us-left,
+  .about-us-right {
+    flex: 1 1 100%;
+  }
 }
 
 /******************** OUR MENU ********************/
