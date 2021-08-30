@@ -212,7 +212,10 @@ h3 {
 
 @media only screen and (max-width: 500px) {
   .nav.show {
-    max-height: 32rem;
+    max-height: 36rem;
+    left: 0;
+    right: 0;
+    transform: none;
   }
 
   .nav-list a {
@@ -312,8 +315,8 @@ h3 {
 
 .main-slider-buttons img {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
   top: 50%;
 }
 
