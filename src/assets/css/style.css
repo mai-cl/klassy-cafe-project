@@ -438,6 +438,7 @@ h3 {
 .our-menu-slider {
   max-width: 150rem;
   margin: 0 auto;
+  margin-bottom: 4rem;
   overflow-x: hidden;
 }
 
@@ -449,6 +450,30 @@ h3 {
 
 .our-menu-slider-container.transition {
   transition: transform 0.15s;
+}
+
+.our-menu-slider-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.our-menu-slider-btn {
+  padding: 0.8rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  opacity: 0.75;
+  transition: opacity 0.5s;
+}
+
+.our-menu-slider-btn:hover {
+  opacity: 1;
+}
+
+.our-menu-slider-btn i {
+  color: var(--main-color);
+  font-size: 2rem;
 }
 
 .cake-card-item {
@@ -489,15 +514,6 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  /* background-color: var(--background-color-4);
-    width: 7rem;
-    height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: 700;
-    border-radius: 3px; */
 }
 
 .cake-card-item .card-text-content {
