@@ -16,6 +16,7 @@
   --background-color-3: #2a2a2a;
   --background-color-4: #fb5849;
   --background-color-4-with-transparency: #fb584980;
+  --background-color-3-with-transparency: #2a2a2adf;
   --text-color-1: #fb5849;
   --text-color-2: #2a2a2a;
   --text-color-3: #ffffff;
@@ -115,11 +116,22 @@ h3 {
   max-width: var(--width-container);
   padding: 0 2rem;
   margin: 0 auto;
+  min-height: 8.5rem;
 }
 
 .logo a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 2.2rem 0 1.4rem 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.logo .logo-icon {
+  font-size: 4rem;
+  margin-right: 0.8rem;
+  color: var(--main-color);
 }
 
 .nav-list {
@@ -165,7 +177,7 @@ h3 {
   background-color: var(--gray-color-1);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1050px) {
   .menu-button {
     display: flex;
   }
@@ -226,28 +238,29 @@ h3 {
 
 /******************** MAIN ********************/
 
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 70rem;
-  width: 100%;
-}
-
-.main-left {
+.main {
   position: relative;
-  flex: 0 0 52rem;
+  height: calc(100vh - 8.5rem);
 }
-
-.main-left img {
-  object-position: center;
+.hero-video-bg {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .hero-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   color: var(--text-color-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-3-with-transparency);
 }
 
 .hero-content .title {
@@ -276,7 +289,7 @@ h3 {
 }
 
 .main-right {
-  flex: 1;
+  /* flex: 1; */
   position: relative;
   overflow-x: hidden;
 }

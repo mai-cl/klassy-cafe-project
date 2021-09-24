@@ -24,7 +24,7 @@ module.exports = {
   devtool: "source-map",
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "./src/template.html"),
+      template: path.resolve(__dirname, "./src/index.html"),
       filename: "index.html",
     }),
     new MiniCssExtractPlugin(),
