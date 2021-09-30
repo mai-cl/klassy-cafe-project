@@ -14,89 +14,43 @@
   </head>
   <body>
     <header class="header" id="header">
-      <div class="header-content">
+      <div class="header-content container">
         <div class="logo">
-          <a href="./"> <i class="fas fa-utensils logo-icon"></i>BestoFood </a>
-        </div>
-        <div class="menu-button" id="nav-toggle-btn">
-          <i class="fas fa-bars"></i>
+          <a href="./"> <i class="fas fa-utensils logo-icon"></i>BestoFood</a>
         </div>
         <nav class="nav" id="nav-menu">
           <ul class="nav-list">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about-us">Quienes Somos</a></li>
-            <li><a href="#our-menu">Nuestros Platos</a></li>
-            <li><a href="#our-chefs">Nuestros Chefs</a></li>
-            <li><a href="#features">Menu</a></li>
-            <li><a href="#contact-us">Contacto</a></li>
+            <li><a href="#nosotros">Quienes Somos</a></li>
+            <li><a href="#platos">Nuestros Platos</a></li>
+            <li><a href="#chefs">Nuestros Chefs</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
+        <div class="menu-button" id="nav-toggle-btn">
+          <i class="fas fa-times icon-close-nav"></i>
+          <i class="fas fa-bars icon-open-nav"></i>
+        </div>
       </div>
     </header>
-    <main class="main" id="home">
+
+    <section class="hero-section" id="home">
       <video class="hero-video-bg" autoplay loop muted>
         <source src="./assets/videos/video-bg.mp4" type="video/mp4" />
       </video>
-      <div class="hero-content">
+      <div class="hero-text-content">
         <h1 class="title">BestoFood</h1>
         <p class="subtitle">La mejor experiencia</p>
         <a href="#" class="btn btn-main">Hacer una reserva</a>
       </div>
-    </main>
+    </section>
 
-    <div class="main-right">
-      <div class="main-slider" id="main-slider">
-        <img
-          src="assets/images/slide-03.jpg"
-          alt="Img slider 3"
-          class="main-slider-item"
-        />
-
-        <img
-          src="assets/images/slide-01.jpg"
-          alt="Img slider 1"
-          class="main-slider-item"
-        />
-        <img
-          src="assets/images/slide-02.jpg"
-          alt="Img slider 2"
-          class="main-slider-item"
-        />
-        <img
-          src="assets/images/slide-03.jpg"
-          alt="Img slider 3"
-          class="main-slider-item"
-        />
-
-        <img
-          src="assets/images/slide-01.jpg"
-          alt="Img slider 1"
-          class="main-slider-item"
-        />
-      </div>
-      <div class="main-slider-buttons">
-        <button class="main-slider-prev-btn" id="main-slider-prev-btn">
-          <img
-            src="assets/images/prev.png"
-            alt="Prev button"
-            class="prev-btn-img"
-          />
-        </button>
-        <button class="main-slider-next-btn" id="main-slider-next-btn">
-          <img
-            src="assets/images/next.png"
-            alt="Next button"
-            class="next-btn-img"
-          />
-        </button>
-      </div>
-    </div>
-
-    <section class="about-us" id="about-us">
-      <div class="about-us-content">
-        <div class="about-us-left">
-          <h2>About us</h2>
-          <h3>We leave a delicious memory for you</h3>
+    <section class="nosotros-section" id="nosotros">
+      <div class="nosotros-content container">
+        <div class="nosotros-text-content">
+          <h2>Quienes Somos</h2>
+          <h3>Conocé nuestra historia</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
             dicta explicabo rem deleniti voluptas nisi nulla et itaque
@@ -105,307 +59,241 @@
             culpa voluptatibus, beatae aut expedita?
           </p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
-            quo atque illo qui quibusdam! Beatae distinctio voluptates illo at?
-            Sed!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+            inventore laudantium repellat rem, fugiat enim nemo dolorum non,
+            quisquam vel consectetur a optio minus perferendis ex molestiae
+            nobis expedita pariatur?
           </p>
-          <div class="about-us-pictures">
+          <div class="nosotros-pictures">
             <img src="assets/images/about-thumb-01.jpg" alt="About thumb 1" />
             <img src="assets/images/about-thumb-02.jpg" alt="About thumb 2" />
             <img src="assets/images/about-thumb-03.jpg" alt="About thumb 3" />
           </div>
         </div>
-        <div class="about-us-right">
-          <img
-            src="assets/images/about-video-bg.jpg"
-            alt="About us video"
-            class="bg-video"
-          />
+        <div class="nosotros-slider-container">
+          <div class="nosotros-slider" id="nosotros-slider">
+            <img
+              src="assets/images/slide-03.jpg"
+              alt="Img slider 3"
+              class="nosotros-slider-item"
+            />
+
+            <img
+              src="assets/images/slide-01.jpg"
+              alt="Img slider 1"
+              class="nosotros-slider-item"
+            />
+            <img
+              src="assets/images/slide-02.jpg"
+              alt="Img slider 2"
+              class="nosotros-slider-item"
+            />
+            <img
+              src="assets/images/slide-03.jpg"
+              alt="Img slider 3"
+              class="nosotros-slider-item"
+            />
+
+            <img
+              src="assets/images/slide-01.jpg"
+              alt="Img slider 1"
+              class="nosotros-slider-item"
+            />
+          </div>
+          <div class="nosotros-slider-buttons">
+            <button
+              class="nosotros-slider-prev-btn"
+              id="nosotros-slider-prev-btn"
+            >
+              <img
+                src="assets/images/prev.png"
+                alt="Prev button"
+                class="prev-btn-img"
+              />
+            </button>
+            <button
+              class="nosotros-slider-next-btn"
+              id="nosotros-slider-next-btn"
+            >
+              <img
+                src="assets/images/next.png"
+                alt="Next button"
+                class="next-btn-img"
+              />
+            </button>
+          </div>
         </div>
       </div>
     </section>
-    <section class="our-menu" id="our-menu">
-      <div class="our-menu-text-content">
-        <h2>Our menu</h2>
-        <h3>Our selection of cakes with quality taste</h3>
+
+    <section class="platos-section" id="platos">
+      <div class="platos-text-content container">
+        <h2>Nuestros platos</h2>
+        <h3>Nuestra selección de platos destacados</h3>
       </div>
-      <div class="our-menu-slider">
-        <div class="our-menu-slider-container" id="menu-slider">
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-05.jpg" alt="menu item 5" />
-            <div class="card-price price">$15</div>
-            <div class="card-text-content">
-              <h4>Klassy cup cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
+      <div class="platos-gallery">
+        <div class="platos-img-container">
+          <img src="./assets/images/gallery-item-01.jpg" alt="Plato 1" />
+          <div class="platos-item-info">
+            <div class="price platos-item-price">
+              <span>$120</span>
+            </div>
+            <div class="platos-item-description">
+              <h4>Lorem ipsum Lorem</h4>
             </div>
           </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-04.jpg" alt="menu item 4" />
-            <div class="card-price price">$16</div>
-            <div class="card-text-content">
-              <h4>Blueberry ChesseCake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
+        </div>
+        <div class="platos-img-container">
+          <img src="./assets/images/gallery-item-02.jpg" alt="Plato 2" />
+          <div class="platos-item-info">
+            <div class="price platos-item-price">
+              <span>$120</span>
+            </div>
+            <div class="platos-item-description">
+              <h4>Lorem ipsum Lorem</h4>
             </div>
           </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-05.jpg" alt="menu item 5" />
-            <div class="card-price price">$17</div>
-            <div class="card-text-content">
-              <h4>Klassy cup cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
+        </div>
+        <div class="platos-img-container">
+          <img src="./assets/images/gallery-item-03.jpg" alt="Plato 3" />
+          <div class="platos-item-info">
+            <div class="price platos-item-price">
+              <span>$120</span>
+            </div>
+            <div class="platos-item-description">
+              <h4>Lorem ipsum Lorem</h4>
             </div>
           </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-05.jpg" alt="menu item 5" />
-            <div class="card-price price">$18</div>
-            <div class="card-text-content">
-              <h4>Klassy cup cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
+        </div>
+        <div class="platos-img-container">
+          <img src="./assets/images/gallery-item-04.jpg" alt="Plato 4" />
+          <div class="platos-item-info">
+            <div class="price platos-item-price">
+              <span>$120</span>
+            </div>
+            <div class="platos-item-description">
+              <h4>Lorem ipsum Lorem</h4>
             </div>
           </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-05.jpg" alt="menu item 5" />
-            <div class="card-price price">$19</div>
-            <div class="card-text-content">
-              <h4>Klassy cup cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
+        </div>
+        <div class="platos-img-container">
+          <img src="./assets/images/gallery-item-05.jpg" alt="Plato 5" />
+          <div class="platos-item-info">
+            <div class="price platos-item-price">
+              <span>$120</span>
+            </div>
+            <div class="platos-item-description">
+              <h4>Lorem ipsum Lorem</h4>
             </div>
           </div>
-
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-01.jpg" alt="menu item 1" />
-            <div class="card-price price">$11</div>
-            <div class="card-text-content">
-              <h4>Chocolate cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
+        </div>
+        <div class="platos-img-container">
+          <img src="./assets/images/gallery-item-06.jpg" alt="Plato 6" />
+          <div class="platos-item-info">
+            <div class="price platos-item-price">
+              <span>$120</span>
+            </div>
+            <div class="platos-item-description">
+              <h4>Lorem ipsum Lorem</h4>
             </div>
           </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-02.jpg" alt="menu item 2" />
-            <div class="card-price price">$12</div>
-            <div class="card-text-content">
-              <h4>Klassy pancake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
+        </div>
+        <div class="platos-img-container">
+          <img src="./assets/images/gallery-item-07.jpg" alt="Plato 7" />
+          <div class="platos-item-info">
+            <div class="price platos-item-price">
+              <span>$120</span>
+            </div>
+            <div class="platos-item-description">
+              <h4>Lorem ipsum Lorem</h4>
             </div>
           </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-03.jpg" alt="menu item 3" />
-            <div class="card-price price">$13</div>
-            <div class="card-text-content">
-              <h4>Tall klassy bread</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
+        </div>
+        <div class="platos-img-container">
+          <img src="./assets/images/gallery-item-08.jpg" alt="Plato 8" />
+          <div class="platos-item-info">
+            <div class="price platos-item-price">
+              <span>$120</span>
             </div>
-          </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-04.jpg" alt="menu item 4" />
-            <div class="card-price price">$14</div>
-            <div class="card-text-content">
-              <h4>Blueberry ChesseCake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
-            </div>
-          </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-05.jpg" alt="menu item 5" />
-            <div class="card-price price">$15</div>
-            <div class="card-text-content">
-              <h4>Klassy cup cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
-            </div>
-          </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-04.jpg" alt="menu item 4" />
-            <div class="card-price price">$16</div>
-            <div class="card-text-content">
-              <h4>Blueberry ChesseCake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
-            </div>
-          </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-05.jpg" alt="menu item 5" />
-            <div class="card-price price">$17</div>
-            <div class="card-text-content">
-              <h4>Klassy cup cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
-            </div>
-          </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-05.jpg" alt="menu item 5" />
-            <div class="card-price price">$18</div>
-            <div class="card-text-content">
-              <h4>Klassy cup cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
-            </div>
-          </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-05.jpg" alt="menu item 5" />
-            <div class="card-price price">$19</div>
-            <div class="card-text-content">
-              <h4>Klassy cup cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
-            </div>
-          </div>
-
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-01.jpg" alt="menu item 1" />
-            <div class="card-price price">$11</div>
-            <div class="card-text-content">
-              <h4>Chocolate cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
-            </div>
-          </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-02.jpg" alt="menu item 2" />
-            <div class="card-price price">$12</div>
-            <div class="card-text-content">
-              <h4>Klassy pancake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
-            </div>
-          </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-03.jpg" alt="menu item 3" />
-            <div class="card-price price">$13</div>
-            <div class="card-text-content">
-              <h4>Tall klassy bread</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
-            </div>
-          </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-04.jpg" alt="menu item 4" />
-            <div class="card-price price">$14</div>
-            <div class="card-text-content">
-              <h4>Blueberry ChesseCake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
-            </div>
-          </div>
-          <div class="cake-card-item">
-            <img src="assets/images/menu-item-05.jpg" alt="menu item 5" />
-            <div class="card-price price">$15</div>
-            <div class="card-text-content">
-              <h4>Klassy cup cake</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                recusandae perferendis distinctio.
-              </p>
+            <div class="platos-item-description">
+              <h4>Lorem ipsum Lorem</h4>
             </div>
           </div>
         </div>
       </div>
-      <div class="our-menu-slider-buttons">
-        <button id="our-menu-slider-prev-btn" class="our-menu-slider-btn">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button id="our-menu-slider-next-btn" class="our-menu-slider-btn">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-      </div>
     </section>
-    <section class="our-chefs" id="our-chefs">
-      <div class="our-chefs-content">
-        <h2>Our chefs</h2>
-        <h3>We offer the best ingredients for you</h3>
-        <div class="our-chefs-cards-container">
-          <div class="our-chefs-card">
-            <picture class="our-chefs-card-picture">
+
+    <section class="chefs-section" id="chefs">
+      <div class="chefs-content container">
+        <h2>Nuestros chefs</h2>
+        <h3>Te ofrecemos los mejores ingredientes</h3>
+        <div class="chefs-cards-container">
+          <div class="chefs-card">
+            <picture class="chefs-card-picture">
               <img src="assets/images/chefs-01.jpg" alt="Chef 1" />
-              <ul class="social-icons-list">
+              <ul class="social-icon-list">
                 <li class="social-icon-list-item">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-icon-link"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
                 </li>
                 <li class="social-icon-list-item">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="social-icon-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
                 </li>
                 <li class="social-icon-list-item">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon-link"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                 </li>
               </ul>
             </picture>
             <h4>Randy Walker</h4>
             <p>Pastry chef</p>
           </div>
-          <div class="our-chefs-card">
-            <picture class="our-chefs-card-picture">
+          <div class="chefs-card">
+            <picture class="chefs-card-picture">
               <img src="assets/images/chefs-02.jpg" alt="Chef 2" />
-              <ul class="social-icons-list">
+              <ul class="social-icon-list">
                 <li class="social-icon-list-item">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-icon-link"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
                 </li>
                 <li class="social-icon-list-item">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="social-icon-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
                 </li>
                 <li class="social-icon-list-item">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon-link"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                 </li>
               </ul>
             </picture>
             <h4>David Martin</h4>
             <p>Cookie chef</p>
           </div>
-          <div class="our-chefs-card">
-            <picture class="our-chefs-card-picture">
+          <div class="chefs-card">
+            <picture class="chefs-card-picture">
               <img src="assets/images/chefs-03.jpg" alt="Chef 3" />
-              <ul class="social-icons-list">
+              <ul class="social-icon-list">
                 <li class="social-icon-list-item">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-icon-link"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
                 </li>
                 <li class="social-icon-list-item">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="social-icon-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
                 </li>
                 <li class="social-icon-list-item">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon-link"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                 </li>
               </ul>
             </picture>
@@ -415,27 +303,337 @@
         </div>
       </div>
     </section>
-    <section class="contact-us" id="contact-us">
-      <div class="contact-us-content">
-        <div class="contact-us-left">
-          <h2>Contact us</h2>
-          <h3>Here you can make a reservation or just walkin to our cafe</h3>
+
+    <section class="menu-section" id="menu">
+      <div class="menu-content container">
+        <h2>Menú</h2>
+        <h3>Ofertas de la semana</h3>
+        <div class="menu-tab-selectors">
+          <button
+            class="btn-tab-selector selected"
+            id="breakfast-selector"
+            data-for-tab="1"
+          >
+            <img src="assets/images/tab-icon-01.png" alt="Breakfast Icon" />
+            <p>Desayuno</p>
+          </button>
+          <button class="btn-tab-selector" id="lunch-selector" data-for-tab="2">
+            <img src="assets/images/tab-icon-02.png" alt="Breakfast Icon" />
+            <p>Almuerzo</p>
+          </button>
+          <button
+            class="btn-tab-selector"
+            id="dinner-selector"
+            data-for-tab="3"
+          >
+            <img src="assets/images/tab-icon-03.png" alt="Breakfast Icon" />
+            <p>Cena</p>
+          </button>
+        </div>
+        <div
+          class="menu-items-container show"
+          id="meals-breakfast"
+          data-tab="1"
+        >
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-04.png"
+              alt="Breakfast item 1"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-07.jpg"
+              alt="Breakfast item 2"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-08.jpg"
+              alt="Breakfast item 3"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-09.jpg"
+              alt="Breakfast item 4"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-10.jpg"
+              alt="Breakfast item 5"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-11.jpg"
+              alt="Breafast item 6"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+        </div>
+        <div class="menu-items-container" id="meals-lunch" data-tab="2">
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-01.png"
+              alt="Tab item 1"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-12.jpg"
+              alt="Tab item 1"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-13.jpg"
+              alt="Tab item 1"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-14.jpg"
+              alt="Tab item 1"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-15.jpg"
+              alt="Tab item 1"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-16.jpg"
+              alt="Tab item 1"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+        </div>
+        <div class="menu-items-container" id="meals-dinner" data-tab="3">
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-05.png"
+              alt="Tab item 5"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-19.jpg"
+              alt="Tab item 5"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-20.jpg"
+              alt="Tab item 5"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-21.jpg"
+              alt="Tab item 5"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-22.jpg"
+              alt="Tab item 5"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+          <div class="menu-item">
+            <img
+              class="menu-item-img"
+              src="assets/images/tab-item-23.jpg"
+              alt="Tab item 5"
+            />
+            <div class="menu-item-details">
+              <h4>Lorem ipsum</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                rem autem qui.
+              </p>
+            </div>
+            <div class="menu-item-price price">$14</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto-section" id="contacto">
+      <div class="contacto-content container">
+        <div class="contacto-details">
+          <h2>Contacto</h2>
+          <h3>Hacé tu reserva o acercate a nuestro local</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Repudiandae, vitae repellendus accusantium ratione, quibusdam atque
             voluptate, error ipsam nisi expedita provident dolore deserunt?
           </p>
-          <div class="contact-cards">
-            <div class="contact-card">
-              <div class="contact-card-icon">
+          <div class="contacto-cards-container">
+            <div class="contacto-card">
+              <div class="contacto-card-icon">
                 <i class="fas fa-phone-alt"></i>
               </div>
-              <h4>Phone Numbers</h4>
+              <h4>Teléfonos</h4>
               <p>080-090-0990</p>
               <p>080-090-0990</p>
             </div>
-            <div class="contact-card">
-              <div class="contact-card-icon">
+            <div class="contacto-card">
+              <div class="contacto-card-icon">
                 <i class="fas fa-envelope"></i>
               </div>
               <h4>Emails</h4>
@@ -444,37 +642,37 @@
             </div>
           </div>
         </div>
-        <div class="contact-us-right">
-          <h3>Table reservation</h3>
-          <form action="#" class="contact-us-form">
+        <div class="contacto-form-container">
+          <h3>Reservar mesa</h3>
+          <form action="#" class="contacto-form">
             <input
               type="text"
               name="name"
               id="name"
               class="input-field"
-              placeholder="Your Name*"
+              placeholder="Nombre*"
             />
             <input
               type="email"
               name="email"
               id="email"
               class="input-field"
-              placeholder="Your Email Address"
+              placeholder="Email"
             />
             <input
               type="text"
               name="phone-number"
               id="phone-number"
               class="input-field"
-              placeholder="Phone Number*"
+              placeholder="Teléfono*"
             />
             <select
               name="number-guests"
               id="number-guests"
               class="input-field"
-              aria-placeholder="Number Of Guests"
+              aria-placeholder="Número de invitados"
             >
-              <option value="0">Number Of Guests</option>
+              <option value="0">Número de invitados</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -501,317 +699,64 @@
               class="input-field"
               aria-placeholder="Time"
             >
-              <option value="0">Time</option>
-              <option value="breakfast">Breakfast</option>
-              <option value="lunch">Lunch</option>
-              <option value="dinner">Dinner</option>
+              <option value="0">Horario</option>
+              <option value="breakfast">Desayuno</option>
+              <option value="lunch">Almuerzo</option>
+              <option value="dinner">Cena</option>
             </select>
             <textarea
               name="message"
               id="message"
               cols="30"
               rows="6"
-              placeholder="Message"
+              placeholder="Mensaje"
             ></textarea>
             <input
               type="submit"
-              value="Make A Reservation"
+              value="Hacer Una Reserva"
               class="btn btn-submit"
             />
           </form>
         </div>
       </div>
-    </section>
-    <section class="klassy-week" id="features">
-      <div class="klassy-week-content">
-        <h2>Klassy week</h2>
-        <h3>This Week's Special Meal Offers</h3>
-        <div class="tab-selectors">
-          <button
-            class="btn-tab-selector selected"
-            id="breakfast-selector"
-            data-for-tab="1"
-          >
-            <img src="assets/images/tab-icon-01.png" alt="Breakfast Icon" />
-            <p>Breakfast</p>
-          </button>
-          <button class="btn-tab-selector" id="lunch-selector" data-for-tab="2">
-            <img src="assets/images/tab-icon-02.png" alt="Breakfast Icon" />
-            <p>Lunch</p>
-          </button>
-          <button
-            class="btn-tab-selector"
-            id="dinner-selector"
-            data-for-tab="3"
-          >
-            <img src="assets/images/tab-icon-03.png" alt="Breakfast Icon" />
-            <p>Dinner</p>
-          </button>
-        </div>
-        <div class="meals-content show" id="meals-breakfast" data-tab="1">
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-04.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Eggs Omelette</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-04.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Eggs Omelette</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-04.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Eggs Omelette</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-04.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Eggs Omelette</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-04.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Eggs Omelette</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-04.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Eggs Omelette</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-        </div>
-        <div class="meals-content" id="meals-lunch" data-tab="2">
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-01.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Fresh Chicken Salad</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-01.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Fresh Chicken Salad</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-01.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Fresh Chicken Salad</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-01.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Fresh Chicken Salad</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-01.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Fresh Chicken Salad</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-01.png" alt="Tab item 1" />
-            </div>
-            <div class="meal-details">
-              <h4>Fresh Chicken Salad</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-        </div>
-        <div class="meals-content" id="meals-dinner" data-tab="3">
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-05.png" alt="Tab item 5" />
-            </div>
-            <div class="meal-details">
-              <h4>Dollma Pire</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-05.png" alt="Tab item 5" />
-            </div>
-            <div class="meal-details">
-              <h4>Dollma Pire</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-05.png" alt="Tab item 5" />
-            </div>
-            <div class="meal-details">
-              <h4>Dollma Pire</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-05.png" alt="Tab item 5" />
-            </div>
-            <div class="meal-details">
-              <h4>Dollma Pire</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-05.png" alt="Tab item 5" />
-            </div>
-            <div class="meal-details">
-              <h4>Dollma Pire</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-          <div class="meal-item">
-            <div class="meal-img">
-              <img src="assets/images/tab-item-05.png" alt="Tab item 5" />
-            </div>
-            <div class="meal-details">
-              <h4>Dollma Pire</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                rem autem qui.
-              </p>
-            </div>
-            <div class="meal-price price">$14</div>
-          </div>
-        </div>
+      <div class="contacto-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62490.23002852198!2d-58.421452517871764!3d-34.59813895340912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1632837461876!5m2!1ses-419!2sar"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </div>
     </section>
+
     <footer class="footer">
-      <div class="footer-content">
-        <ul class="social-icons-list">
+      <div class="footer-content container">
+        <ul class="social-icon-list">
           <li class="social-icon-list-item">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
           </li>
           <li class="social-icon-list-item">
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon-link"
+              ><i class="fab fa-twitter"></i
+            ></a>
           </li>
           <li class="social-icon-list-item">
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </li>
           <li class="social-icon-list-item">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-link"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </li>
         </ul>
-        <section class="footer-logo">
-          <img src="assets/images/white-logo.png" alt="footer logo" />
+        <section class="footer-logo logo">
+          <a href="./"> <i class="fas fa-utensils logo-icon"></i>BestoFood</a>
         </section>
         <section class="footer-copy">
-          <p>&copy; Copyright Klassy Cafe Co.</p>
-          <p>Design: TemplateMo</p>
+          <p>&copy; Copyright BestoFood</p>
         </section>
       </div>
     </footer>

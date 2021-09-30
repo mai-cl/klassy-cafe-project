@@ -11,18 +11,8 @@ const mainSlider = {
   moveToRight: null,
 };
 
-const menuSlider = {
-  element: elements.menuSlider,
-  items: elements.menuSliderItems,
-  infSliderCounter: 0,
-  numberItemsOnScreen: 5,
-  moveToRight: null,
-};
-
-//TODO: Agregar los dummy items desde JS, no a mano desde HTML
 window.addEventListener("load", () => {
   infinitySlider.init(mainSlider);
-  infinitySlider.init(menuSlider);
 });
 
 elements.selectors.forEach((selector) => {
@@ -43,17 +33,12 @@ elements.mainSliderNextBtn.addEventListener("click", (e) =>
   infinitySlider.onClickNextBtn(mainSlider)
 );
 
-elements.menuSlider.addEventListener("transitionend", (e) => {
-  if (e.target !== elements.menuSlider) return;
-  infinitySlider.onTransitionEnd(menuSlider);
-});
-elements.menuPrevBtn.addEventListener("click", (e) =>
-  infinitySlider.onClickPrevBtn(menuSlider)
-);
-elements.menuNextBtn.addEventListener("click", (e) =>
-  infinitySlider.onClickNextBtn(menuSlider)
-);
-
 elements.navToggleBtn.addEventListener("click", () => {
   elements.navMenu.classList.toggle("show");
+});
+
+elements.navMenu.addEventListener("click", (e) => {
+  if (e.target.matches(".nav a")) {
+    elements.navMenu.classList.remove("show");
+  }
 });
