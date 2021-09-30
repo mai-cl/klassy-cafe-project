@@ -17,6 +17,7 @@
   --background-color-4: #fb5849;
   --background-transparent-color-1: #2a2a2adf;
   --background-transparent-color-2: #00000080;
+  --background-transparent-color-3: #00000033;
   --text-color-1: #fb5849;
   --text-color-2: #2a2a2a;
   --text-color-3: #ffffff;
@@ -32,6 +33,7 @@ html {
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
@@ -172,7 +174,12 @@ p {
 
 .header {
   background-color: var(--background-color-1);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 4px 0 var(--background-transparent-color-3);
 }
 
 .header-content {
@@ -236,11 +243,11 @@ p {
 
   .nav {
     display: block;
+    box-shadow: 0 2px 4px 0 var(--background-transparent-color-3);
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10;
     background-color: var(--background-color-1);
     max-width: 60rem;
     width: 100%;
@@ -305,7 +312,7 @@ p {
 
 .hero-section {
   position: relative;
-  height: calc(100vh - 8.5rem);
+  height: 100vh;
 }
 .hero-video-bg {
   display: block;
@@ -331,6 +338,7 @@ p {
 .hero-text-content .title {
   font-size: 6.2rem;
   font-family: "Dancing Script", cursive;
+  margin-top: 8.5rem;
   margin-bottom: 0.2rem;
 }
 

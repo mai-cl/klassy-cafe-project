@@ -42,3 +42,24 @@ elements.navMenu.addEventListener("click", (e) => {
     elements.navMenu.classList.remove("show");
   }
 });
+
+ScrollReveal().reveal("#header", {
+  duration: 2000,
+  origin: "bottom",
+  distance: "-85px",
+});
+ScrollReveal().reveal("#nosotros", {
+  duration: 2000,
+  origin: "right",
+  distance: "120px",
+});
+ScrollReveal().reveal("#platos", {
+  duration: 2000,
+  origin: "left",
+  distance: "120px",
+});
+ScrollReveal().reveal("#chefs, #menu, #contacto", {
+  duration: 2000,
+  origin: "bottom",
+  distance: "120px",
+});
