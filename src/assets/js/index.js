@@ -48,18 +48,13 @@ ScrollReveal().reveal("#header", {
   origin: "bottom",
   distance: "-85px",
 });
-ScrollReveal().reveal("#nosotros", {
+ScrollReveal().reveal("#nosotros, #chefs, .contacto-content", {
   duration: 2000,
   origin: "right",
   distance: "120px",
 });
-ScrollReveal().reveal("#platos", {
+ScrollReveal().reveal(".platos-text-content, .platos-gallery, .menu-content", {
   duration: 2000,
   origin: "left",
-  distance: "120px",
-});
-ScrollReveal().reveal("#chefs, #menu, #contacto", {
-  duration: 2000,
-  origin: "bottom",
   distance: "120px",
 });
