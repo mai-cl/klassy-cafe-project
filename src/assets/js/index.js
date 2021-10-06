@@ -1,7 +1,8 @@
-import "../css/style.css";
-import { elements } from "./base";
-import tabSelector from "./tabSelector";
-import * as infinitySlider from "./infinitySlider";
+import '../css/style.css'
+import { elements } from './base'
+import tabSelector from './tabSelector'
+import { smoothScrolling } from './smoothScrolling'
+import * as infinitySlider from './infinitySlider'
 
 const mainSlider = {
   element: elements.mainSlider,
@@ -9,52 +10,59 @@ const mainSlider = {
   infSliderCounter: 0,
   numberItemsOnScreen: 1,
   moveToRight: null,
-};
+}
 
-window.addEventListener("load", () => {
-  infinitySlider.init(mainSlider);
-});
+window.addEventListener('load', () => {
+  infinitySlider.init(mainSlider)
+})
 
-elements.selectors.forEach((selector) => {
-  selector.addEventListener("click", (e) => {
-    const clickedBtnSelector = e.target.closest(".btn-tab-selector");
-    tabSelector(clickedBtnSelector);
-  });
-});
+elements.selectors.forEach(selector => {
+  selector.addEventListener('click', e => {
+    const clickedBtnSelector = e.target.closest('.btn-tab-selector')
+    tabSelector(clickedBtnSelector)
+  })
+})
 
-elements.mainSlider.addEventListener("transitionend", (e) => {
-  if (e.target !== elements.mainSlider) return;
-  infinitySlider.onTransitionEnd(mainSlider);
-});
-elements.mainSliderPrevBtn.addEventListener("click", (e) =>
+elements.mainSlider.addEventListener('transitionend', e => {
+  if (e.target !== elements.mainSlider) return
+  infinitySlider.onTransitionEnd(mainSlider)
+})
+elements.mainSliderPrevBtn.addEventListener('click', e =>
   infinitySlider.onClickPrevBtn(mainSlider)
-);
-elements.mainSliderNextBtn.addEventListener("click", (e) =>
+)
+elements.mainSliderNextBtn.addEventListener('click', e =>
   infinitySlider.onClickNextBtn(mainSlider)
-);
+)
 
-elements.navToggleBtn.addEventListener("click", () => {
-  elements.navMenu.classList.toggle("show");
-});
+elements.navToggleBtn.addEventListener('click', () => {
+  elements.navMenu.classList.toggle('show')
+})
 
-elements.navMenu.addEventListener("click", (e) => {
-  if (e.target.matches(".nav a")) {
-    elements.navMenu.classList.remove("show");
+elements.navMenu.addEventListener('click', e => {
+  if (e.target.matches('.nav a')) {
+    elements.navMenu.classList.remove('show')
   }
-});
+})
 
-ScrollReveal().reveal("#header", {
+ScrollReveal().reveal('#header', {
   duration: 2000,
-  origin: "bottom",
-  distance: "-85px",
-});
-ScrollReveal().reveal("#nosotros, #chefs, .contacto-content", {
+  origin: 'bottom',
+  distance: '-85px',
+})
+ScrollReveal().reveal('#nosotros, #chefs, .contacto-content', {
   duration: 2000,
-  origin: "right",
-  distance: "120px",
-});
-ScrollReveal().reveal(".platos-text-content, .platos-gallery, .menu-content", {
+  origin: 'right',
+  distance: '120px',
+})
+ScrollReveal().reveal('.platos-text-content, .platos-gallery, .menu-content', {
   duration: 2000,
-  origin: "left",
-  distance: "120px",
-});
+  origin: 'left',
+  distance: '120px',
+})
+
+smoothScrolling(elements.linkToHome, elements.homeSection)
+smoothScrolling(elements.linkToNosotros, elements.nosotrosSection)
+smoothScrolling(elements.linkToPlatos, elements.platosSection)
+smoothScrolling(elements.linkToChefs, elements.chefsSection)
+smoothScrolling(elements.linkToMenu, elements.menuSection)
+smoothScrolling(elements.linkToContacto, elements.contactoSection)
