@@ -175,12 +175,16 @@ p {
 
 .header {
   background-color: var(--background-color-1);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
   box-shadow: 0 2px 4px 0 var(--background-transparent-color-3);
+}
+
+.header.sticky {
+  position: fixed;
 }
 
 .header-content {

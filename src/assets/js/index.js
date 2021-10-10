@@ -96,3 +96,22 @@ window.addEventListener('scroll', e => {
     .find(link => link.dataset.forSection === currentSectionId)
     .classList.add('active')
 })
+
+const headerHeight = elements.header.getBoundingClientRect().height
+
+const stickyNav = function (entries, observer) {
+  const entry = entries[0]
+  if (entry.isIntersecting) {
+    elements.header.classList.remove('sticky')
+  } else {
+    elements.header.classList.add('sticky')
+  }
+}
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${headerHeight}px`,
+})
+
+headerObserver.observe(elements.homeSection)
