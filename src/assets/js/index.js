@@ -44,21 +44,7 @@ elements.navMenu.addEventListener('click', e => {
   }
 })
 
-ScrollReveal().reveal('#header', {
-  duration: 2000,
-  origin: 'bottom',
-  distance: '-85px',
-})
-ScrollReveal().reveal('#nosotros, #chefs, .contacto-content', {
-  duration: 2000,
-  origin: 'right',
-  distance: '120px',
-})
-ScrollReveal().reveal('.platos-text-content, .platos-gallery, .menu-content', {
-  duration: 2000,
-  origin: 'left',
-  distance: '120px',
-})
+/* Smooth scrolling */
 
 smoothScrolling(elements.linkToHome, elements.homeSection)
 smoothScrolling(elements.linkToNosotros, elements.nosotrosSection)
@@ -66,6 +52,8 @@ smoothScrolling(elements.linkToPlatos, elements.platosSection)
 smoothScrolling(elements.linkToChefs, elements.chefsSection)
 smoothScrolling(elements.linkToMenu, elements.menuSection)
 smoothScrolling(elements.linkToContacto, elements.contactoSection)
+
+/* Highlight active section link */
 
 const allSections = [
   elements.homeSection,
@@ -97,6 +85,8 @@ window.addEventListener('scroll', e => {
     .classList.add('active')
 })
 
+/* Sticky nav */
+
 const headerHeight = elements.header.getBoundingClientRect().height
 
 const stickyNav = function (entries, observer) {
@@ -115,3 +105,28 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 })
 
 headerObserver.observe(elements.homeSection)
+
+/* Scroll reveal */
+
+const hiddenSections = [...elements.allSectionHiddenContainers].filter(
+  section => !section.classList.contains('hero-section')
+)
+
+const scrollReveal = function (entries, observer) {
+  const entry = entries[0]
+
+  if (!entry.isIntersecting) return
+
+  entry.target.classList.remove('hidden-section')
+  observer.unobserve(entry.target)
+}
+
+const sectionsObserver = new IntersectionObserver(scrollReveal, {
+  root: null,
+  threshold: 0.15,
+})
+
+hiddenSections.forEach(section => {
+  section.classList.add('hidden-section')
+  sectionsObserver.observe(section)
+})

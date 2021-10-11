@@ -26,4 +26,8 @@ export const elements = {
   chefsSection: document.getElementById('chefs'),
   menuSection: document.getElementById('menu'),
   contactoSection: document.getElementById('contacto'),
+
+  allSectionHiddenContainers: document.querySelectorAll(
+    'body > section .container, .platos-gallery'
+  ),
 }
