@@ -29,7 +29,6 @@
 
 html {
   font-size: 62.5%;
-  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -501,7 +500,7 @@ p {
   }
 }
 
-/******************** NUESTROS PLATOS ********************/
+/******************** PLATOS SECTION ********************/
 
 .platos-section {
   background-color: var(--background-color-2);

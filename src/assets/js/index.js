@@ -4,10 +4,12 @@ import tabSelector from './tabSelector'
 import { smoothScrolling } from './smoothScrolling'
 import * as infinitySlider from './infinitySlider'
 
+/* Slider */
+
 const mainSlider = {
   element: elements.mainSlider,
   items: elements.mainSliderItems,
-  infSliderCounter: 0,
+  stepCounter: 0,
   numberItemsOnScreen: 1,
   moveToRight: null,
 }
@@ -16,6 +18,21 @@ window.addEventListener('load', () => {
   infinitySlider.init(mainSlider)
 })
 
+elements.mainSlider.addEventListener('transitionend', e => {
+  if (e.target !== elements.mainSlider) return
+  infinitySlider.onTransitionEnd(mainSlider)
+})
+
+elements.mainSliderPrevBtn.addEventListener('click', e =>
+  infinitySlider.onClickPrevBtn(mainSlider)
+)
+
+elements.mainSliderNextBtn.addEventListener('click', e =>
+  infinitySlider.onClickNextBtn(mainSlider)
+)
+
+/* Tab selector */
+
 elements.selectors.forEach(selector => {
   selector.addEventListener('click', e => {
     const clickedBtnSelector = e.target.closest('.btn-tab-selector')
@@ -23,16 +40,7 @@ elements.selectors.forEach(selector => {
   })
 })
 
-elements.mainSlider.addEventListener('transitionend', e => {
-  if (e.target !== elements.mainSlider) return
-  infinitySlider.onTransitionEnd(mainSlider)
-})
-elements.mainSliderPrevBtn.addEventListener('click', e =>
-  infinitySlider.onClickPrevBtn(mainSlider)
-)
-elements.mainSliderNextBtn.addEventListener('click', e =>
-  infinitySlider.onClickNextBtn(mainSlider)
-)
+/* Toggle nav menu */
 
 elements.navToggleBtn.addEventListener('click', () => {
   elements.navMenu.classList.toggle('show')
